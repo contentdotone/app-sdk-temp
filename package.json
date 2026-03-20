@@ -1,0 +1,17 @@
+{
+  "name": "@contentdotone/app-sdk",
+  "version": "1.0.0",
+  "description": "Vanilla JS SDK for integrating apps within the Zesty Manager shell",
+  "main": "app-sdk.js",
+  "scripts": {
+    "build": "esbuild app-sdk.js --bundle --minify --outfile=app-sdk.min.js --format=iife"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentdotone/app-sdk-temp.git"
+  },
+  "license": "ISC"
+}

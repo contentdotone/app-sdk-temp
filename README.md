@@ -2,12 +2,41 @@
 
 Vanilla JS SDK for integrating apps within the Zesty Manager shell. Handles authentication, token management, SSO, and parent-child iframe communication via `postMessage`.
 
+## Installation
+
+### CDN (recommended)
+
+Load the minified build via jsDelivr — no install or build step required:
+
+```html
+<!-- Pinned to a specific version (recommended) -->
+<script src="https://cdn.jsdelivr.net/gh/contentdotone/app-sdk-temp@v1.0.0/app-sdk.min.js"></script>
+
+<!-- Latest from main (use for development only) -->
+<script src="https://cdn.jsdelivr.net/gh/contentdotone/app-sdk-temp@main/app-sdk.min.js"></script>
+```
+
+### Self-hosted
+
+Copy `app-sdk.js` (or `app-sdk.min.js`) into your project and reference it directly:
+
+```html
+<script src="/js/app-sdk.js"></script>
+```
+
+### Building from source
+
+```bash
+npm install
+npm run build   # produces app-sdk.min.js
+```
+
 ## Quick Start
 
 Include the script and initialize:
 
 ```html
-<script src="/js/app-sdk.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/contentdotone/app-sdk-temp@v1.0.0/app-sdk.min.js"></script>
 <script>
   ZestySDK.init('https://auth.api.zesty.io')
     .then(function (result) {
