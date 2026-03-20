@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is a temp repo pending a vanilla build flow from https://github.com/zesty-io/app-sdk
+
 # Zesty App SDK
 
 Vanilla JS SDK for integrating apps within the Zesty Manager shell. Handles authentication, token management, SSO, and parent-child iframe communication via `postMessage`.
